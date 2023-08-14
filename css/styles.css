@@ -68,6 +68,7 @@ ul {
   margin: 0 auto;
   width: 1158px;
   padding: 0 15px;
+  box-sizing: border-box;
 }
 
 .section {
@@ -411,6 +412,16 @@ ul {
 .footer-container {
   display: flex;
   justify-content: space-between;
+}
+
+.footer-logo {
+  color: var(--navyblue, #2e2f42);
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 21px;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
 }
 
 .footer-social-list {
@@ -796,4 +807,130 @@ ul {
 .modal-send-btn:focus {
   background-color: var(--ocean, #404bbf);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+/* Tablet */
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 768px;
+  }
+
+  .section.section-no-top-padding {
+    padding: 0;
+  }
+
+  .section.section-grey {
+    padding-top: 0;
+  }
+
+  .section.customers-section {
+    padding-top: 0;
+  }
+
+  .header-address {
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+  }
+  .header-address-link {
+    padding: 0;
+  }
+
+  .features-list {
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+
+  .features-item {
+    max-width: 356px;
+  }
+
+  .features-svg-box {
+    display: none;
+  }
+
+  .team-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 64px 24px;
+  }
+  .customers-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 72px 24px;
+  }
+
+  .what-we-do-container {
+    display: none;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 72px 24px;
+  }
+
+  /* .newsletter-subscription {
+    margin-right: 40px;
+  } */
+
+  .project-cover-wrap img {
+    width: 356px;
+  }
+  .project {
+    justify-content: flex-start;
+  }
+}
+
+@media only screen and (max-width: 428px) {
+  .container {
+    width: 428px;
+    padding: 0 16px;
+  }
+
+  .header-list {
+    display: none;
+  }
+
+  .header-address {
+    display: none;
+  }
+
+  .features-title {
+    text-align: center;
+  }
+
+  .features-list {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-social-media-text {
+    text-align: center;
+  }
+
+  .newsletter-title {
+    text-align: center;
+  }
+
+  .newsletter-form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .newsletter-email {
+    width: 398px;
+  }
 }
