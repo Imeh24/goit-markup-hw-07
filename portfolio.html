@@ -55,6 +55,106 @@
             >
           </li>
         </ul>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-icon">
+            <use href="./images/icon.svg#hamburger-open"></use>
+          </svg>
+        </button>
+
+        <!-- Hamburger navigations and menu close icon -->
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button class="menu-toggle js-close-menu">
+            <svg width="32" height="32">
+              <use href="./images/icon.svg#hamburger-close"></use>
+            </svg>
+          </button>
+          <!-- Mobile navigation -->
+          <ul class="mobile-menu-list lists">
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link links" href="./index.html">Studio</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link current links" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link links" href="#barbers">Contacts</a>
+            </li>
+          </ul>
+
+          <!-- Mobile contacts address -->
+          <ul class="mobile-address lists">
+            <li>
+              <a
+                class="mobile-address-link links"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="mobile-address-link links" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+
+          <!-- Mobile Socials -->
+          <ul class="mobile-social-list lists">
+            <li class="mobile-social-item">
+              <a
+                class="mobile-social-link link"
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="mobile-social-icon" width="20" height="20">
+                  <use href="./images/icon.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-item">
+              <a
+                class="mobile-social-link link"
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="mobile-social-icon" width="20" height="20">
+                  <use href="./images/icon.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-item">
+              <a
+                class="mobile-social-link link"
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="mobile-social-icon" width="20" height="20">
+                  <use href="./images/icon.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-item">
+              <a
+                class="mobile-social-link link"
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="mobile-social-icon" width="20" height="20">
+                  <use href="./images/icon.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <!-- This is main -->
@@ -339,5 +439,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
