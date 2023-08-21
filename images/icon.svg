@@ -77,8 +77,11 @@
 <symbol id="check-mark" viewBox="0 0 42 32">
     <path fill="#fff" style="fill: var(--color1); stroke: var(--color1)" stroke="#fff" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.64" d="M6.262 15.206l-0.221-0.211-0.221 0.208-3.085 2.925 0.243 0.234 11.408 10.88 0.221-0.211 24.256-23.139-0.243-0.23-3.043-2.902-0.221 0.211-20.97 19.987-8.125-7.75z"></path>
 </symbol>
-<symbol id="icon-menu-hamburger" viewBox="0 0 47 32">
-    <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4.3636" d="M1.961 29.153h42.964M1.961 15.615h42.964M1.961 2.077h42.964"></path>
+<symbol id="hamburger-open" viewBox="0 0 32 32">
+    <path d="M6.4 11.734V9.6h19.2v2.134H6.4zm0 5.332h19.2v-2.133H6.4v2.133zm0 5.334h19.2v-2.134H6.4V22.4z"></path>
+</symbol>
+<symbol id="hamburger-close" viewBox="0 0 32 32">
+    <path d="M23.734 10.304 22.23 8.8l-5.963 5.962L10.305 8.8l-1.504 1.504 5.962 5.962-5.962 5.963 1.504 1.504 5.962-5.963 5.963 5.963 1.504-1.504-5.963-5.963 5.963-5.962z"></path>
 </symbol>
 </defs>
 </svg>

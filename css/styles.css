@@ -9,6 +9,7 @@ body {
 
 img {
   display: block;
+  width: 100%;
   max-width: 100%;
   height: auto;
 }
@@ -38,7 +39,6 @@ ul {
   --greencolor: #31d0aa;
   --lightslatecolor: #8e8f99;
   --navybluemodalcolor: #2e2f42;
-  --greycolor: #2e2f42;
   --dairycolor: #fcfcfc;
   --blackcolor: rgba(0, 0, 0, 0.2);
 }
@@ -81,10 +81,6 @@ ul {
 
 .section {
   padding: 96px 0 0 0;
-
-  @media screen and (min-width: 1158px) {
-    padding: 120px 0;
-  }
 
   @media screen and (min-width: 1158px) {
     padding: 120px 0;
@@ -223,6 +219,33 @@ ul {
   }
 }
 
+.menu-icon {
+  width: 32px;
+  height: 22px;
+}
+
+.menu-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  background-color: transparent;
+  color: var(--navybluemodalcolor);
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu-icon {
+  fill: currentColor;
+}
+
 .hero-section {
   padding: 188px 0;
   background-image: linear-gradient(
@@ -230,7 +253,7 @@ ul {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/hero-bg.jpg);
+    url(../images/hero-bg-m.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -238,6 +261,56 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bg-m@2x.jpg);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bg-t.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-bg-t@2x.jpg);
+    }
+  }
+  @media screen and (min-width: 1158px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bg-d.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-bg-d@2x.jpg);
+    }
+  }
 }
 
 .hero-title {
@@ -343,6 +416,10 @@ ul {
 
 .features-title {
   text-align: center;
+
+  @media screen and (min-width: 1158px) {
+    text-align: left;
+  }
 }
 
 .features-item {
@@ -352,7 +429,6 @@ ul {
 
   @media screen and (min-width: 1158px) {
     width: 264px;
-    box-sizing: border-box;
   }
 }
 
@@ -363,22 +439,30 @@ ul {
 
   @media screen and (min-width: 768px) {
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 72px 24px;
   }
 
   @media screen and (min-width: 1158px) {
-    justify-content: space-around;
     gap: 20px;
   }
 }
 
 .what-we-do-list {
   display: none;
+
+  @media screen and (min-width: 1158px) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .what-we-do-title {
   display: none;
+
+  @media screen and (min-width: 1158px) {
+    display: block;
+  }
 }
 
 .team-list {
@@ -459,6 +543,8 @@ ul {
   }
 
   @media screen and (min-width: 1158px) {
+    gap: 24px;
+    margin-bottom: 0;
   }
 }
 
@@ -522,7 +608,6 @@ ul {
   line-height: 21px;
   letter-spacing: 0.54px;
   text-transform: uppercase;
-  text-align: center;
   display: block;
   text-align: center;
 
@@ -654,6 +739,10 @@ ul {
 
   @media screen and (min-width: 768px) {
     margin-right: 40px;
+  }
+
+  @media screen and (min-width: 1158px) {
+    margin-right: 0;
   }
 }
 
