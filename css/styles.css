@@ -1061,7 +1061,7 @@ ul {
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 48px 40px;
+  padding: 24px 40px 40px 40px;
   background-color: var(--whitecolor);
   z-index: 200;
 
