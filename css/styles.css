@@ -361,9 +361,15 @@ ul {
 .filter {
   margin-bottom: 72px;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+
+  justify-content: flex-start;
   align-items: center;
   gap: 24px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
 }
 
 .active {
@@ -734,6 +740,11 @@ ul {
   gap: 48px 24px;
   justify-content: center;
   align-items: center;
+
+  @media screen and (min-width: 768px) {
+    gap: 72px 18px;
+    justify-content: flex-start;
+  }
 }
 
 .project-description {
