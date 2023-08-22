@@ -184,6 +184,13 @@ ul {
 .header-container {
   display: flex;
   justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 .header-navigation {
@@ -1001,154 +1008,41 @@ ul {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
-/* Tablet */
-/* @media only screen and (max-width: 768px) {
-  .container {
-    width: 768px;
-  }
-
-  .section.section-no-top-padding {
-    padding: 0;
-  }
-
-  .section.section-grey {
-    padding-top: 0;
-  }
-
-  .section.customers-section {
-    padding-top: 0;
-  }
-
-  .header-address {
-    flex-direction: column;
-    gap: 12px;
-    justify-content: center;
-  }
-  .header-address-link {
-    padding: 0;
-  }
-
-  .features-list {
-    flex-wrap: wrap;
-    gap: 72px 24px;
-  }
-
-  .features-item {
-    max-width: 356px;
-  }
-
-  .features-svg-box {
-    display: none;
-  }
-
-  .team-list {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 64px 24px;
-  }
-  .customers-list {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 72px 24px;
-  }
-
-  .what-we-do-container {
-    display: none;
-  }
-
-  .footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 72px 24px;
-  }
-
-  .project-cover-wrap img {
-    width: 356px;
-  }
-  .project {
-    justify-content: flex-start;
-  }
-}
-
-@media only screen and (max-width: 428px) {
-  .container {
-    width: 428px;
-    padding: 0 16px;
-  }
-
-  .header-list {
-    display: none;
-  }
-
-  .header-address {
-    display: none;
-  }
-
-  .features-title {
-    text-align: center;
-  }
-
-  .features-list {
-    align-items: center;
-    justify-content: center;
-  }
-
-  .footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .footer-social-media-text {
-    text-align: center;
-  }
-
-  .newsletter-title {
-    text-align: center;
-  }
-
-  .newsletter-form {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 16px;
-  }
-
-  .newsletter-email {
-    width: 398px;
-  }
-} */
-
-.menu-icon {
-  width: 32px;
-  height: 22px;
-}
-
 .menu-toggle {
   display: flex;
   align-items: center;
   justify-content: center;
-
+  width: 24px;
+  height: 24px;
   margin-left: auto;
-  padding: 24px 0;
+  padding: 0;
   background-color: transparent;
   cursor: pointer;
   border: none;
   border-radius: 50%;
   outline: none;
-  color: var(--primary-white-color);
+  color: var(--navyblue);
 
   @media screen and (min-width: 768px) {
     display: none;
   }
 }
 
-.menu-icon {
+.menu-hamburger-icon {
+  width: 30px;
+  height: 30px;
   fill: currentColor;
+  border: none;
+}
+
+.js-close-menu {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 32px;
+}
+
+.menu-hamburger-close-icon {
+  width: 8px;
+  height: 8px;
 }
 
 .menu-container {
@@ -1195,8 +1089,20 @@ ul {
 }
 
 .mobile-address {
+  margin-top: 284px;
   font-style: normal;
-  margin-bottom: 32px;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+}
+
+.mobile-address .phone {
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+  color: var(--iriscolor);
 }
 
 .mobile-address-link {
@@ -1206,13 +1112,16 @@ ul {
 
 .mobile-address-link:hover,
 .mobile-address-link:focus {
-  color: var(--primary-orange-color);
+  color: var(--oceancolor);
 }
 
 /* Mobile Socials */
 .mobile-social-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-betweens;
+  gap: 56px;
+  margin-top: 48px;
+  margin-bottom: 40px;
 }
 
 .mobile-social-item {
@@ -1224,7 +1133,7 @@ ul {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  color: var(--primary-white-color);
+  color: var(--whitecolor);
   background-color: var(--iriscolor);
 
   display: flex;
@@ -1236,7 +1145,7 @@ ul {
 
 .mobile-social-link:hover,
 .mobile-social-link:focus {
-  background-color: var(--primary-black-color);
+  background-color: var(--oceancolor);
 }
 
 .mobile-social-icon {
