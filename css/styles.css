@@ -65,7 +65,7 @@ ul {
 
 .container {
   margin: 0 auto;
-  width: 428px;
+  width: 100%;
   padding: 0 15px;
   box-sizing: border-box;
 
@@ -1140,7 +1140,7 @@ ul {
 .mobile-social-list {
   display: flex;
   justify-content: space-betweens;
-  gap: 56px;
+  gap: 35px;
   margin-top: 48px;
   margin-bottom: 40px;
 }
