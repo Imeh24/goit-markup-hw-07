@@ -95,20 +95,14 @@ ul {
 }
 
 .section .titles {
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 40px;
-  letter-spacing: 0.72px;
-  text-transform: capitalize;
-  margin-bottom: 8px;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 120% */
+  letter-spacing: 0.4px;
   color: var(--navyblue);
-
-  @media screen and (min-width: 1158px) {
-    font-size: 20px;
-    font-weight: 500;
-    letter-spacing: 0.4px;
-    color: var(--navyblue);
-  }
+  margin-bottom: 8px;
 }
 
 .bottom-text {
@@ -228,6 +222,7 @@ ul {
   @media screen and (min-width: 1158px) {
     flex-direction: row;
     gap: 40px;
+    font-size: 16px;
   }
 }
 
@@ -406,11 +401,21 @@ ul {
   }
 }
 
-.features-title {
+.features-title.titles {
   text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
 
   @media screen and (min-width: 768px) {
     text-align: left;
+  }
+
+  @media screen and (min-width: 1158px) {
+    font-size: 20px;
+    font-weight: 500;
   }
 }
 
@@ -437,6 +442,7 @@ ul {
 
   @media screen and (min-width: 1158px) {
     gap: 20px;
+    padding-bottom: 0;
   }
 }
 
@@ -728,8 +734,6 @@ ul {
 }
 
 .newsletter-subscription {
-  width: 453px;
-
   @media screen and (min-width: 768px) {
     margin-right: 40px;
   }
