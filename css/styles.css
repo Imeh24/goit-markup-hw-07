@@ -95,11 +95,20 @@ ul {
 }
 
 .section .titles {
-  font-size: 20px;
-  font-weight: 500;
-  letter-spacing: 0.4px;
-  color: var(--navyblue);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
   margin-bottom: 8px;
+  color: var(--navyblue);
+
+  @media screen and (min-width: 1158px) {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    color: var(--navyblue);
+  }
 }
 
 .bottom-text {
@@ -213,6 +222,7 @@ ul {
     gap: 12px;
     align-items: center;
     justify-content: center;
+    font-size: 12px;
   }
 
   @media screen and (min-width: 1158px) {
@@ -222,7 +232,7 @@ ul {
 }
 
 .hero-section {
-  padding: 188px 0;
+  padding: 112px 0;
   background-image: linear-gradient(
       to right,
       rgba(46, 47, 66, 0.7),
@@ -251,7 +261,7 @@ ul {
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(
         to right,
-        rgba(46, 47, 66, 0.7),
+        188 rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/hero-bg-t.jpg);
@@ -268,6 +278,7 @@ ul {
     }
   }
   @media screen and (min-width: 1158px) {
+    padding: 188px 0;
     background-image: linear-gradient(
         to right,
         rgba(46, 47, 66, 0.7),
@@ -398,7 +409,7 @@ ul {
 .features-title {
   text-align: center;
 
-  @media screen and (min-width: 1158px) {
+  @media screen and (min-width: 768px) {
     text-align: left;
   }
 }
@@ -416,12 +427,12 @@ ul {
 .features-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 72px;
+  gap: 72px 24px;
 
   @media screen and (min-width: 768px) {
     align-items: center;
-    justify-content: space-between;
-    gap: 72px 24px;
+    justify-content: center;
+    padding-bottom: 96px;
   }
 
   @media screen and (min-width: 1158px) {
@@ -702,6 +713,7 @@ ul {
   width: 165px;
   height: 40px;
   display: flex;
+  font-weight: 500;
   align-items: center;
   justify-content: center;
   color: var(--whitecolor);
@@ -1019,8 +1031,8 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 22px;
   margin-left: auto;
   padding: 0;
   background-color: transparent;
@@ -1036,8 +1048,6 @@ ul {
 }
 
 .menu-hamburger-icon {
-  width: 30px;
-  height: 30px;
   fill: currentColor;
   border: none;
 }
@@ -1045,6 +1055,8 @@ ul {
 .js-close-menu {
   border: 1px solid rgba(0, 0, 0, 0.1);
   margin-bottom: 32px;
+  width: 24px;
+  height: 24px;
 }
 
 .menu-hamburger-close-icon {
