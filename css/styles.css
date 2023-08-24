@@ -830,7 +830,8 @@ ul {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 408px;
+  width: 100%;
+  max-width: 408px;
   min-height: 584px;
   padding: 72px 24px 24px 24px;
   border-radius: 4px;
@@ -903,6 +904,8 @@ ul {
 }
 
 .form-field {
+  width: 100%;
+
   color: var(--lightslate, #8e8f99);
   font-size: 12px;
   line-height: 14px;
@@ -912,7 +915,7 @@ ul {
 }
 
 .form-input {
-  width: 360px;
+  width: 100%;
   height: 40px;
   padding-left: 38px;
   border-radius: 4px;
@@ -943,8 +946,9 @@ ul {
 }
 
 .form-order-comment {
+  width: 100%;
   resize: none;
-  width: 360px;
+
   padding: 8px 16px;
   height: 120px;
   border-radius: 4px;
@@ -963,6 +967,7 @@ ul {
 }
 
 .form-agreement {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -971,7 +976,6 @@ ul {
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.48px;
-  width: 360px;
 }
 
 .form-checkbox {
