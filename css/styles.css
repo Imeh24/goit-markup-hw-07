@@ -683,7 +683,7 @@ ul {
   }
 
   @media screen and (min-width: 1158px) {
-    margin: 0;
+    margin: 0 0 16px;
   }
 }
 
