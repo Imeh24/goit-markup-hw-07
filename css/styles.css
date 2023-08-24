@@ -66,11 +66,11 @@ ul {
 .container {
   margin: 0 auto;
   width: 100%;
-  padding: 0 15px;
-  box-sizing: border-box;
+  padding: 0 16px;
 
   @media screen and (min-width: 768px) {
     width: 768px;
+    padding: 0 15px;
   }
 
   @media screen and (min-width: 1158px) {
@@ -79,7 +79,7 @@ ul {
 }
 
 .section {
-  padding: 96px 0 0 0;
+  padding: 96px 0;
 
   @media screen and (min-width: 1158px) {
     padding: 120px 0;
@@ -87,7 +87,7 @@ ul {
 }
 
 .section-no-top-padding {
-  padding-top: 0;
+  padding: 0;
 }
 
 .section-grey {
@@ -423,10 +423,6 @@ ul {
   @media screen and (min-width: 768px) {
     width: 356px;
   }
-
-  @media screen and (min-width: 1158px) {
-    width: 264px;
-  }
 }
 
 .features-list {
@@ -436,12 +432,11 @@ ul {
 
   @media screen and (min-width: 768px) {
     align-items: center;
-    justify-content: center;
-    padding-bottom: 96px;
+    justify-content: space-evenly;
   }
 
   @media screen and (min-width: 1158px) {
-    gap: 20px;
+    flex-wrap: nowrap;
     padding-bottom: 0;
   }
 }
@@ -534,9 +529,9 @@ ul {
   align-items: center;
   justify-content: center;
   gap: 72px 16px;
-  margin-bottom: 96px;
 
   @media screen and (min-width: 768px) {
+    justify-content: center;
     gap: 72px 24px;
   }
 
@@ -660,15 +655,13 @@ ul {
   height: 24px;
 }
 
-.newsletter-form {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-
+.newsletter-subscription {
   @media screen and (min-width: 768px) {
-    gap: 24px;
+    margin-right: 40px;
+  }
+
+  @media screen and (min-width: 1158px) {
+    margin-right: 0;
   }
 }
 
@@ -680,6 +673,18 @@ ul {
 
   @media screen and (min-width: 768px) {
     text-align: left;
+  }
+}
+
+.newsletter-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+
+  @media screen and (min-width: 768px) {
+    gap: 24px;
   }
 }
 
@@ -733,16 +738,6 @@ ul {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
-.newsletter-subscription {
-  @media screen and (min-width: 768px) {
-    margin-right: 40px;
-  }
-
-  @media screen and (min-width: 1158px) {
-    margin-right: 0;
-  }
-}
-
 .newsletter-subscription-icon {
   width: 24px;
   height: 24px;
@@ -753,7 +748,7 @@ ul {
 .project {
   display: flex;
   flex-wrap: wrap;
-  gap: 48px 24px;
+  gap: 48px;
   justify-content: center;
   align-items: center;
 
