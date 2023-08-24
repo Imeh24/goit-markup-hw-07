@@ -87,7 +87,7 @@ ul {
 }
 
 .section-no-top-padding {
-  padding: 0;
+  padding: 0 0 120px 0;
 }
 
 .section-grey {
@@ -656,12 +656,15 @@ ul {
 }
 
 .newsletter-subscription {
+  width: 100%;
+
   @media screen and (min-width: 768px) {
     margin-right: 40px;
   }
 
   @media screen and (min-width: 1158px) {
     margin-right: 0;
+    width: 453px;
   }
 }
 
@@ -673,18 +676,21 @@ ul {
 
   @media screen and (min-width: 768px) {
     text-align: left;
+    margin-left: 123px;
+  }
+
+  @media screen and (min-width: 1158px) {
+    margin: 0;
   }
 }
 
 .newsletter-form {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-
   @media screen and (min-width: 768px) {
     gap: 24px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -700,7 +706,7 @@ ul {
   padding: 8px 16px;
   outline: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  width: 398px;
+  width: 100%;
 
   @media screen and (min-width: 768px) {
     width: 264px;
@@ -720,6 +726,7 @@ ul {
   background-color: var(--iriscolor);
   border-radius: 4px;
   border: 0;
+  margin: 16px auto 0;
   cursor: pointer;
   width: 165px;
   height: 40px;
@@ -730,6 +737,10 @@ ul {
   color: var(--whitecolor);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) {
+    margin: 0;
+  }
 }
 
 .newsletter-subscription-button:hover,
