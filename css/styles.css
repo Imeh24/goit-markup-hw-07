@@ -87,7 +87,7 @@ ul {
 }
 
 .section-no-top-padding {
-  padding: 0 0 120px 0;
+  padding: 0;
 }
 
 .section-grey {
@@ -445,6 +445,7 @@ ul {
   display: none;
 
   @media screen and (min-width: 1158px) {
+    padding-bottom: 120px;
     display: flex;
     justify-content: space-between;
   }
